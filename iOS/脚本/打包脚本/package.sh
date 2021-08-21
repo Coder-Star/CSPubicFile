@@ -6,8 +6,8 @@
 
 ### 需要根据自己项目的情况进行修改，XXX都是需要进行修改的，可搜索进行修改 ###
 
-# target名称
-TARGET_NAME=XXX
+# Project名称
+PROJECT_NAME=XXX
 
 ## Scheme名
 SCHEME_NAME=XXX
@@ -27,10 +27,10 @@ EXPORTOPTIONSPLIST_PATH=XXX
 
 
 ## workspace路径
-WORKSPACE_PATH=${PROJECT_ROOT_PATH}/${TARGET_NAME}.xcworkspace
+WORKSPACE_PATH=${PROJECT_ROOT_PATH}/${PROJECT_NAME}.xcworkspace
 
 ## project路径
-PROJECT_PATH=${PROJECT_ROOT_PATH}/${TARGET_NAME}.xcodeproj
+PROJECT_PATH=${PROJECT_ROOT_PATH}/${PROJECT_NAME}.xcodeproj
 
 ### 编译打包过程 ###
 
