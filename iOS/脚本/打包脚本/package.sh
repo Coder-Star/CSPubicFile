@@ -98,12 +98,11 @@ fi
 
 ## 上传app store
 
-ALTOOL_PATH="/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool"
+# 验证
+# xcrun altool --validate-app -f ${IPA_PATH}/${SCHEME_NAME}.ipa -t ios --apiKey xxx --apiIssuer xxx --verbose
 
-# 将-u 后面的XXX替换成自己的AppleID的账号，-p后面的XXX替换成自己的密码
-# "$ALTOOL_PATH" --validate-app -f ${IPA_PATH}/${SCHEME_NAME}.ipa -u XXX -p XXX -t ios --output-format xml
-
-# "$ALTOOL_PATH" --upload-app -f ${IPA_PATH}/${SCHEME_NAME}.ipa -u  XXX -p XXX -t ios --output-format xml
+# 上传
+# xcrun altool --upload-app -f ${IPA_PATH}/${SCHEME_NAME}.ipa -t ios --apiKey xxx --apiIssuer xxx --verbose
 
 ## 上传到蒲公英
 echo "============Upload PGYER Begin============"
